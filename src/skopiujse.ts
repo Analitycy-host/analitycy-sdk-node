@@ -9,7 +9,7 @@ export class SkopiujSeClient {
     public constructor() {}
 
     async createPaste(content: string): Promise<SkopiujSeResponse> {
-        let request = await fetch("https://hastebin.com/documents", {
+        let request = await fetch("https://skopiuj.se/documents", {
             method: "POST",
             headers: {
                 "User-Agent": "Analitycy-SDK-node/1",
