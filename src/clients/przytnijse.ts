@@ -12,6 +12,7 @@ export class PrzytnijSeClient {
 
     async shortenURL(url: string, desiredID?: string): Promise<PrzytnijSeResponse> {
         let request = await fetch("https://przytnij.se/create", {
+            method: "POST",
             headers: {
                 "User-Agent": "Analitycy-SDK-node/1",
                 "Content-Type": "application/json"
