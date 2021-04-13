@@ -2,8 +2,8 @@
   "name": "@analitycy.host/analitycy-sdk",
   "version": "0.0.5",
   "description": "analitycy-sdk",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc"
   },
