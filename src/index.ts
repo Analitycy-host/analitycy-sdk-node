@@ -1,0 +1,1 @@
+export {PrzytnijSeClient} from "./clients/przytnijse";
