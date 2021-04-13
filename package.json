@@ -1,0 +1,30 @@
+{
+  "name": "@analitycy.host/analitycy-sdk",
+  "version": "0.0.2",
+  "description": "analitycy-sdk",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Analitycy-host/analitycy-sdk-node.git"
+  },
+  "keywords": [],
+  "author": "mrtalon63 <marcin@czop.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Analitycy-host/analitycy-sdk-node/issues"
+  },
+  "homepage": "https://github.com/Analitycy-host/analitycy-sdk-node#readme",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.37",
+    "@types/node-fetch": "^2.5.10",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  }
+}
