@@ -4,7 +4,7 @@ import formData from "form-data";
 export class WyslijSeClient {
 
     token: string | undefined;
-    APIUrl: string = `https://api.wyslij.se` || process.env.WYSLIJSE_URL;
+    APIUrl: string = process.env.WYSLIJSE_URL || `https://api.wyslij.se`;
 
     public constructor(token: string) {
         this.token = token || process.env.WYSLIJSE_TOKEN
