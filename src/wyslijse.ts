@@ -3,11 +3,12 @@ import formData from "form-data";
 
 export class WyslijSeClient {
 
-    token: string | undefined;
-    APIUrl: string = process.env.WYSLIJSE_URL || `https://api.wyslij.se`;
+    private token: string | undefined;
+    private APIUrl: string;
 
     public constructor(token: string) {
-        this.token = token || process.env.WYSLIJSE_TOKEN
+        this.token = token || process.env.WYSLIJSE_TOKEN;
+        this.APIUrl = "https://api.wyslij.se";
     };
 
     async uploadFile(content: StreamPipeOptions): Promise<WyslijSeUpload> {
