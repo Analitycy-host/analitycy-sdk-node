@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Analitycy-host/analitycy-sdk-node#readme",
   "dependencies": {
+    "form-data": "^3.0.1",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
