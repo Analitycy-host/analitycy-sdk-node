@@ -4,11 +4,10 @@ import formData from "form-data";
 export class WyslijSeClient {
 
     token: string | undefined;
-    APIUrl: string;
+    APIUrl: string = `https://api.wyslij.se` || process.env.WYSLIJSE_URL;
 
     public constructor(token: string) {
         this.token = token || process.env.WYSLIJSE_TOKEN
-        this.APIUrl = `https://api.wyslij.se` || process.env.WYSLIJSE_URL
     };
 
     async uploadFile(content: StreamPipeOptions): Promise<WyslijSeUpload> {
